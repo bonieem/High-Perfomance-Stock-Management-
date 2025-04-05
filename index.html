@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="home-page" class="page">
+            <h1 style="text-align: center;color:aquamarine;">Stock Management System</h1>
+            <div id="add-product">
+                <h2>Add Product</h2>
+                <label for="product-name">Name:</label>
+                <input type="text" id="product-name"><br><br>
+                <label for="product-quantity">Quantity:</label>
+                <input type="number" id="product-quantity"><br><br>
+                <label for="product-unit">Unit:</label>
+                <select id="product-unit">
+                    <option value="kilograms">Kilograms</option>
+                    <option value="bags">Bags</option>
+                </select><br><br>
+                <button id="add-button">Add</button>
+            </div>
+            <div id="view-stock">
+                <h2>View Stock</h2>
+                <button id="sort-name">Sort by Name</button>
+                <button id="sort-quantity">Sort by Quantity</button>
+                <button id="sort-price">Sort by Price</button>
+                <input type="text" id="search-input" placeholder="Search products...">
+                <table id="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Price</th>
+                            <th>Total Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <button id="clear-all-button" class="red-bin">🗑️</button>
+        </div>
+
+        <div id="sales-orders-page" class="page" style="display: none;">
+            <h2>Sales Orders</h2>
+            <div id="sales-list">
+            </div>
+        </div>
+
+        <div id="items-page" class="page" style="display: none;">
+            <h2>Items</h2>
+            <div id="product-list">
+            </div>
+        </div>
+
+        <div id="packages-page" class="page" style="display: none;">
+            <h2>Packages</h2>
+            <div>
+                <p>Content for your packages page will go here!</p>
+            </div>
+        </div>
+
+        <div id="invoices-page" class="page" style="display: none;">
+            <h2>Invoices</h2>
+            <div id="invoices-list">
+                <p>No invoices generated yet.</p>
+            </div>
+        </div>
+    </main>
+    <div class="bottom-nav">
+        <a href="#" class="nav-item" data-page="home-page">
+            <img src="images/download.png" alt="Home">
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-item" data-page="sales-orders-page">
+            <img src="images/3b792c505de0362430f21af891458318.jpg" alt="Sales Orders">
+            <span>Sales Orders</span>
+        </a>
+        <a href="#" class="nav-item" data-page="packages-page">
+            <img src="images/download (1).png" alt="Packages">
+            <span>Packages</span>
+        </a>
+        <a href="#" class="nav-item" data-page="invoices-page">
+            <img src="images/download (2).png" alt="Invoices">
+            <span>Invoices</span>
+        </a>
+        <a href="#" class="nav-item" data-page="items-page">
+            <img src="images/images (1).png" alt="Items">
+            <span>Items</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

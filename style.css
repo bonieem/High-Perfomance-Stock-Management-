@@ -1,0 +1,184 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#add-product, #view-stock {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="number"], input[type="text"], select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.page {
+    display: block;
+    padding-bottom: 60px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-item.active {
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.product-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-box p {
+    margin: 5px 0;
+}
+
+.product-box strong {
+    color: #00838f;
+}
+
+.red-bin {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.red-bin:hover {
+    background-color: darkred;
+}
+
+.product-folder {
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 3px;
+    font-size: 0.9em;
+}
+
+.sales-container {
+  display: flex;
+    background-color: aquamarine;
+    padding: 3px;
+}
+
+.sale-item {
+    border-bottom: 1px solid wheat;
+    padding: 2px;
+    margin-bottom: 2px;
+    font-size: 0.95em;
+   
+}
+.sale-box strong {
+    color: #00838f;
+}
+/* Add these styles to your style.css */
+.invoice {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.invoice h3 {
+    margin-top: 0;
+}
+
+.invoice h4 {
+    margin-bottom: 5px;
+}
+
+.invoice ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.invoice li {
+    margin-bottom: 3px;
+}
+
+.invoice hr {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
