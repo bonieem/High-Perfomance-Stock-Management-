@@ -1,10 +1,7 @@
-Here’s your code with comments added to the last section to clarify its functionality and guide the reader:
-
-c
 #include <stdio.h>
 int main() {
     char operator; // Declare variable to store the operator
-    double num1, num2, result; // Declare variables for the two numbers and the result
+    double num1, num2, result;
 
     // Prompt user to enter an operator
     printf("Enter an operator (+, -, *, /): ");
